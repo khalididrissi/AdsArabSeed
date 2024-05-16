@@ -20,7 +20,6 @@
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b49835');
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b13062');
         blockElementsByClass('GoogleCreativeContainerClass');
-        blockElementsByClass('pl-6f4f5c3f5bfa5f5651799c658cb3556b__wrap');
 
 
         blockElementsByClass('');
@@ -87,15 +86,28 @@
 
         ];
 
+
         elementsToRemoveById.forEach(function(elementId) {
             var element = document.getElementById(elementId);
             if (element) {
                 element.remove();
             }
         });
+function blockIframes() {
+    var iframes = document.getElementsByTagName('iframe');
+
+    // Remove iframes from the DOM
+    while (iframes.length > 0) {
+        iframes[0].parentNode.removeChild(iframes[0]);
+    }
+}
+
+
+
 
         // Remove additional aplvideo elements by class name
         var aplvideoDivs = document.getElementsByClassName('aplvideo');
         while (aplvideoDivs.length > 0) {
             aplvideoDivs[0].remove();
         }
+blockIframes();
