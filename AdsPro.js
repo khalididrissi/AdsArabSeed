@@ -20,6 +20,15 @@
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b49835');
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b13062');
         blockElementsByClass('GoogleCreativeContainerClass');
+        blockElementsByClass('pl-6f4f5c3f5bfa5f5651799c658cb3556b__wrap');
+
+        
+        blockElementsByClass('sey');
+        blockElementsByClass('');
+        blockElementsByClass('');
+        blockElementsByClass('');
+        blockElementsByClass('');
+        blockElementsByClass('');
         blockElementsByClass('');
         blockElementsByClass('');
 
