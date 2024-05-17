@@ -18,10 +18,10 @@
         blockElementsByClass('PageHeader');
         blockElementsByClass('SlideMenu');
         blockElementsByClass('relatedPosts');
-        blockElementsByClass('row');
-        blockElementsByClass('AboElSeed');
-        blockElementsByClass('ads-aa');
-        blockElementsByClass('videoAdUi');
+        //blockElementsByClass('row');
+        //blockElementsByClass('AboElSeed');
+        //blockElementsByClass('ads-aa');
+        //blockElementsByClass('videoAdUi');
 
 
 
