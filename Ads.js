@@ -8,6 +8,13 @@
         }
 
 
+
+        // 3isk Start 
+        blockElementsByClass('logo');
+        blockElementsByClass('header-items');
+        blockElementsByClass('aplvideo');
+        // 3isk End 
+
         blockElementsByClass('PageHeader');
         blockElementsByClass('SlideMenu');
         blockElementsByClass('relatedPosts');
