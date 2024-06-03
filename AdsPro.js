@@ -20,7 +20,8 @@ blockElementsByClassPrefix('SlideMenu');
 blockElementsByClassPrefix('relatedPosts');
 blockElementsByClassPrefix('row');
 blockElementsByClassPrefix('AboElSeed');
-blockElementsByClassPrefix('ads-aa');
+blockElementsByClassPrefix('ads-');
+blockElementsByClassPrefix('banner-container');
 
 // 3isk Start 
 blockElementsByClassPrefix('logo');
@@ -52,3 +53,4 @@ blockElementsByClassPrefix('banner');
 blockElementsByClassPrefix('fixedban');
 blockElementsByClassPrefix('ps_ad');
 blockElementsByClassPrefix('live-ad');
+blockElementsByClassPrefix('sarhne--banr');
