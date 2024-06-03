@@ -13,5 +13,5 @@ function blockElementsByClassPrefix(classPrefix) {
 }
 
 // Call the function with the desired class prefixes
-blockElementsByClassPrefix('container-6f4f5c3f5');
+blockElementsByClassPrefix('container');
 blockElementsByClassPrefix('div-gpt-ad-');
