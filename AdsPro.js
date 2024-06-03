@@ -13,9 +13,15 @@ function blockElementsByClassPrefix(classPrefix) {
 }
 
 // Call the function with the desired class prefixes
-blockElementsByClassPrefix('container');
 blockElementsByClassPrefix('div-gpt-ad-');
 blockElementsByClassPrefix('pl-6f4f');
+blockElementsByClassPrefix('PageHeader');
+blockElementsByClassPrefix('SlideMenu');
+blockElementsByClassPrefix('relatedPosts');
+blockElementsByClassPrefix('row');
+blockElementsByClassPrefix('AboElSeed');
+blockElementsByClassPrefix('ads-aa');
+
 // 3isk Start 
 blockElementsByClassPrefix('logo');
 blockElementsByClassPrefix('header-items');
