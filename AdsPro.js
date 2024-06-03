@@ -42,3 +42,7 @@ blockElementsByClassPrefix('mb-3 text-center');
 blockElementsByClassPrefix('fade modal');
 blockElementsByClassPrefix('d-flex justify-content-center my-3');
 //END 3ISK
+blockElementsByClassPrefix('banner');
+blockElementsByClassPrefix('fixedban');
+blockElementsByClassPrefix('ps_ad');
+blockElementsByClassPrefix('live-ad');
