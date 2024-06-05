@@ -51,6 +51,7 @@ blockElementsByClass('fixedban');
 blockElementsByClass('ps_ad');
 blockElementsByClass('live-ad');
 blockElementsByClass('sarhne--banr');
+blockElementsByClass('live-ad-container');
 
 
 
@@ -68,11 +69,18 @@ blockElementsByClass('sarhne--banr');
             'ad_unit',
             'fixedban2',
             'fixedban',
+            'banner-container',
+            'ad_position_box',
             'gpt_unit_/21727820151,22953604694/Gametech_HM/video-ad2_0',
             'container-6f4f5c3f5bfa5f5651799c658cb3556b44923',
             'div-gpt-ad-1714577932847-0',
             'google_ads_iframe_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0__container__',
-            'gpt_unit_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0'
+            'gpt_unit_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0',
+            'ps_ad_rotation_id_5200',
+            'banner1',
+            'banner2',
+            'fixedban5',
+
 
         ];
 
