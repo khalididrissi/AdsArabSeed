@@ -9,19 +9,48 @@
 
 
 
-        // 3isk Start 
-        blockElementsByClass('logo');
-        blockElementsByClass('header-items');
-        blockElementsByClass('aplvideo');
-        // 3isk End 
 
-        blockElementsByClass('PageHeader');
-        blockElementsByClass('SlideMenu');
-        blockElementsByClass('relatedPosts');
-        blockElementsByClass('row');
-        blockElementsByClass('AboElSeed');
-        //blockElementsByClass('ads-aa');
-        //blockElementsByClass('videoAdUi');
+blockElementsByClass('div-gpt-ad-');
+blockElementsByClass('pl-6f4f');
+blockElementsByClass('PageHeader');
+blockElementsByClass('SlideMenu');
+blockElementsByClass('relatedPosts');
+blockElementsByClass('row');
+blockElementsByClass('AboElSeed');
+blockElementsByClass('ads-');
+blockElementsByClass('banner-container');
+
+// 3isk Start 
+blockElementsByClass('logo');
+blockElementsByClass('header-items');
+blockElementsByClass('aplvideo');
+blockElementsByClass('main-container videoap-container');
+blockElementsByClass('sm_box_1694957651544');
+blockElementsByClass('header-wrapper');
+blockElementsByClass('footer');
+blockElementsByClass('row width_fix_300 my-20');
+blockElementsByClass('row width_fix_300 watch-row-2 my-20');
+blockElementsByClass('my-40');
+blockElementsByClass('div-gpt-ad-1698946296176-0');
+blockElementsByClass('div-gpt-ad-1698946361303-0');
+blockElementsByClass('div-gpt-ad-8176806-1');
+blockElementsByClass('blog-post');
+blockElementsByClass('comments-container');
+blockElementsByClass('abs-head');
+blockElementsByClass('modal fade');
+blockElementsByClass('wrapper justify-content-between align-items-center');
+blockElementsByClass('abs');
+blockElementsByClass('end');
+blockElementsByClass('aside-wrapper mt-5');
+blockElementsByClass('mb-3 text-center');
+blockElementsByClass('fade modal');
+blockElementsByClass('d-flex justify-content-center my-3');
+//END 3ISK
+blockElementsByClass('banner');
+blockElementsByClass('fixedban');
+blockElementsByClass('ps_ad');
+blockElementsByClass('live-ad');
+blockElementsByClass('sarhne--banr');
 
 
 
