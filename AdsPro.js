@@ -1,56 +1,61 @@
-function blockElementsByClassPrefix(classPrefix) {
-    var elements = document.getElementsByTagName("*");
+ function blockElementsByClass(className) {
+            var elements = document.getElementsByClassName(className);
 
-    for (var i = 0; i < elements.length; i++) {
-        var classes = elements[i].className.split(" ");
-        for (var j = 0; j < classes.length; j++) {
-            if (classes[j].startsWith(classPrefix)) {
-                elements[i].parentNode.removeChild(elements[i]);
-                break; // Exit the inner loop since the element has been removed
+            // Remove elements from the DOM
+            while (elements.length > 0) {
+                elements[0].parentNode.removeChild(elements[0]);
             }
         }
-    }
-}
 
-// Call the function with the desired class prefixes
-blockElementsByClassPrefix('div-gpt-ad-');
-blockElementsByClassPrefix('pl-6f4f');
-blockElementsByClassPrefix('PageHeader');
-blockElementsByClassPrefix('SlideMenu');
-blockElementsByClassPrefix('relatedPosts');
-blockElementsByClassPrefix('row');
-blockElementsByClassPrefix('AboElSeed');
-blockElementsByClassPrefix('ads-');
-blockElementsByClassPrefix('banner-container');
 
-// 3isk Start 
-blockElementsByClassPrefix('logo');
-blockElementsByClassPrefix('header-items');
-blockElementsByClassPrefix('aplvideo');
-blockElementsByClassPrefix('main-container videoap-container');
-blockElementsByClassPrefix('sm_box_1694957651544');
-blockElementsByClassPrefix('header-wrapper');
-blockElementsByClassPrefix('footer');
-blockElementsByClassPrefix('row width_fix_300 my-20');
-blockElementsByClassPrefix('row width_fix_300 watch-row-2 my-20');
-blockElementsByClassPrefix('my-40');
-blockElementsByClassPrefix('div-gpt-ad-1698946296176-0');
-blockElementsByClassPrefix('div-gpt-ad-1698946361303-0');
-blockElementsByClassPrefix('div-gpt-ad-8176806-1');
-blockElementsByClassPrefix('blog-post');
-blockElementsByClassPrefix('comments-container');
-blockElementsByClassPrefix('abs-head');
-blockElementsByClassPrefix('modal fade');
-blockElementsByClassPrefix('wrapper justify-content-between align-items-center');
-blockElementsByClassPrefix('abs');
-blockElementsByClassPrefix('end');
-blockElementsByClassPrefix('aside-wrapper mt-5');
-blockElementsByClassPrefix('mb-3 text-center');
-blockElementsByClassPrefix('fade modal');
-blockElementsByClassPrefix('d-flex justify-content-center my-3');
-//END 3ISK
-blockElementsByClassPrefix('banner');
-blockElementsByClassPrefix('fixedban');
-blockElementsByClassPrefix('ps_ad');
-blockElementsByClassPrefix('live-ad');
-blockElementsByClassPrefix('sarhne--banr');
+
+        // 3isk Start 
+        blockElementsByClass('logo');
+        blockElementsByClass('header-items');
+        blockElementsByClass('aplvideo');
+        // 3isk End 
+
+        blockElementsByClass('PageHeader');
+        blockElementsByClass('SlideMenu');
+        blockElementsByClass('relatedPosts');
+        blockElementsByClass('row');
+        blockElementsByClass('AboElSeed');
+        //blockElementsByClass('ads-aa');
+        //blockElementsByClass('videoAdUi');
+
+
+
+
+
+
+
+
+
+        // Remove elements by ID
+        var elementsToRemoveById = [
+            'div-gpt-ad-1714577946689-0',
+            'div-gpt-ad-1715073293748-0',
+            'ps_ad_rotation_id_5446',
+            'ad_unit',
+            'fixedban2',
+            'fixedban',
+            'gpt_unit_/21727820151,22953604694/Gametech_HM/video-ad2_0',
+            'container-6f4f5c3f5bfa5f5651799c658cb3556b44923',
+            'div-gpt-ad-1714577932847-0',
+            'google_ads_iframe_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0__container__',
+            'gpt_unit_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0'
+
+        ];
+
+        elementsToRemoveById.forEach(function(elementId) {
+            var element = document.getElementById(elementId);
+            if (element) {
+                element.remove();
+            }
+        });
+
+        // Remove additional aplvideo elements by class name
+        var aplvideoDivs = document.getElementsByClassName('aplvideo');
+        while (aplvideoDivs.length > 0) {
+            aplvideoDivs[0].remove();
+        }
