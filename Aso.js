@@ -18,6 +18,14 @@ function blockElementsBySelector(selector) {
     });
 }
 
+// Block the popup container
+function blockPopupContainer() {
+    var popupContainers = document.querySelectorAll('iframe[class*="container-6f4f5c3f5bfa5f5651799c658cb3556b"][style*="position: fixed;"]');
+    popupContainers.forEach(function(container) {
+        container.parentNode.removeChild(container);
+    });
+}
+
 // Block common ad selectors
 blockElementsBySelector('iframe[src*=".doubleclick.net"]');
 blockElementsBySelector('iframe[src*=".googleadservices.com"]');
