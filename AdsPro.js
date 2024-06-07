@@ -108,6 +108,7 @@ blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b8124');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b12185');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b41932');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b71401');
+blockElementsByClass('infoPosterTwo');
 
 // Remove elements by ID
 var elementsToRemoveById = [
