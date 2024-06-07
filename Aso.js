@@ -20,7 +20,7 @@ function blockElementsBySelector(selector) {
 
 // Block the popup container
 function blockPopupContainer() {
-    var popupContainers = document.querySelectorAll('iframe[id^="container-6f4"][style*="position: fixed;"]');
+    var popupContainers = document.querySelectorAll('iframe[class*="container-6f4f5c3f5bfa5f5651799c658cb3556b"][style*="position: fixed;"]');
     popupContainers.forEach(function(container) {
         container.parentNode.removeChild(container);
     });
@@ -83,6 +83,10 @@ blockElementsByClass('row');
 blockElementsByClass('AboElSeed');
 blockElementsByClass('ads-aa');
 blockElementsByClass('pl-6f4f5c3f5bfa5f5651799c658cb3556b__wrap');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b40743');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b6839');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b49835');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b13062');
 blockElementsByClass('GoogleCreativeContainerClass');
 blockElementsByClass('pl-6f4f5c3f5bfa5f5651799c658cb3556b__wrap');
 //End Page 1
@@ -97,6 +101,13 @@ blockElementsByClass('ima-sdk-frame');
 blockElementsByClass('HeaderLogo');
 blockElementsByClass('downloadBTn');
 blockElementsByClass('div-over');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b32535');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b62840');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b9969');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b8124');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b12185');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b41932');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b71401');
 
 // Remove elements by ID
 var elementsToRemoveById = [
@@ -108,6 +119,7 @@ var elementsToRemoveById = [
     'fixedban',
     'fixedban5',
     'gpt_unit_/21727820151,22953604694/Gametech_HM/video-ad2_0',
+    'container-6f4f5c3f5bfa5f5651799c658cb3556b44923',
     'div-gpt-ad-1714577932847-0',
     'google_ads_iframe_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0__container__',
     'gpt_unit_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0',
