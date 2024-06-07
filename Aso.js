@@ -51,7 +51,7 @@
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b49835');
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b13062');
         blockElementsByClass('GoogleCreativeContainerClass');
-        blockElementsByClass('');
+        blockElementsByClass('pl-6f4f5c3f5bfa5f5651799c658cb3556b__wrap');
         blockElementsByClass('');
         blockElementsByClass('');
         blockElementsByClass('');
@@ -65,6 +65,7 @@
         blockElementsByClass('div-over');
         blockElementsByClass('WatcherArea');
         blockElementsByClass('videoAdUi');
+        blockElementsByClass('sarhne--banr');
         blockElementsByClass('');
         blockElementsByClass('');
         blockElementsByClass('');
@@ -74,8 +75,7 @@
         blockElementsByClass('');
         blockElementsByClass('');
         blockElementsByClass('');
-        blockElementsByClass('');
-        blockElementsByClass('');
+        blockElementsByClass('div-over');
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b32535');
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b62840');
         blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b9969');
@@ -99,6 +99,7 @@
             'ad_unit',
             'fixedban2',
             'fixedban',
+            'fixedban5',
             'gpt_unit_/21727820151,22953604694/Gametech_HM/video-ad2_0',
             'container-6f4f5c3f5bfa5f5651799c658cb3556b44923',
             'div-gpt-ad-1714577932847-0',
@@ -108,7 +109,9 @@
             'google_ads_iframe_/22654869840/apl_1__container__',
             'google_ads_iframe_/22893379435/apl_0__container__',
             'dontfoid', 
-            'gpt_unit_/7047,22643491855/apl/anchor/anchortop_0'
+            'gpt_unit_/7047,22643491855/apl/anchor/anchortop_0',
+            'banner-container',
+            'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__',
 
         ];
 
