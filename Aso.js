@@ -20,7 +20,7 @@ function blockElementsBySelector(selector) {
 
 // Block the popup container
 function blockPopupContainer() {
-    var popupContainers = document.querySelectorAll('iframe[class*="container-6f4f5c3f5bfa5f5651799c658cb3556b"][style*="position: fixed;"]');
+    var popupContainers = document.querySelectorAll('iframe[id^="container-6f4"][style*="position: fixed;"]');
     popupContainers.forEach(function(container) {
         container.parentNode.removeChild(container);
     });
@@ -43,6 +43,10 @@ blockElementsBySelector('div[id*="ad"]');
 blockElementsBySelector('div[class*="ad"]');
 blockElementsBySelector('div[id*="banner"]');
 blockElementsBySelector('div[class*="banner"]');
+
+
+// Block the popup container
+blockPopupContainer();
 
 // 3isk Start
 blockElementsByClass('logo');
