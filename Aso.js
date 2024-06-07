@@ -2,13 +2,15 @@
 function blockElementsByClassPrefix(prefix) {
     // Get all elements in the document
     var allElements = document.getElementsByTagName('*');
+    console.log('Blocking elements with prefix:', prefix);
 
     // Iterate over all elements
-    for (var i = 0; i < allElements.length; i++) {
+    for (var i = allElements.length - 1; i >= 0; i--) {
         // If the element's class name starts with the prefix, remove it
         var classes = allElements[i].className.split(' ');
         classes.forEach(function(className) {
             if (className.startsWith(prefix)) {
+                console.log('Removing:', allElements[i]);
                 allElements[i].parentNode.removeChild(allElements[i]);
             }
         });
@@ -49,4 +51,3 @@ blockElementsByClassPrefix('relatedPosts');
 blockElementsByClassPrefix('row');
 blockElementsByClassPrefix('AboElSeed');
 blockElementsByClassPrefix('ads-aa');
-
