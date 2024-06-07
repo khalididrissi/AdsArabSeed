@@ -1,22 +1,58 @@
 // Function to block elements by class name prefix
 function blockElementsByClassPrefix(prefix) {
-    // Get all elements in the document
     var allElements = document.getElementsByTagName('*');
-    console.log('Blocking elements with prefix:', prefix);
-
-    // Iterate over all elements
     for (var i = allElements.length - 1; i >= 0; i--) {
-        // If the element's class name starts with the prefix, remove it
         var classes = allElements[i].className.split(' ');
         classes.forEach(function(className) {
             if (className.startsWith(prefix)) {
-                console.log('Removing:', allElements[i]);
                 allElements[i].parentNode.removeChild(allElements[i]);
             }
         });
     }
 }
 
+// Function to remove elements by ID
+function removeElementsById(elementIds) {
+    elementIds.forEach(function(elementId) {
+        var element = document.getElementById(elementId);
+        if (element) {
+            element.parentNode.removeChild(element);
+        }
+    });
+}
+
+// Call the functions with the class name prefix and IDs you want to block
+blockElementsByClassPrefix('container-6f4f5c3f5bfa5f56517'); // Adjust the prefix as needed
+removeElementsById([
+    'div-gpt-ad-1714577946689-0',
+    'div-gpt-ad-1715073293748-0',
+    'ps_ad_rotation_id_5446',
+    'ad_unit',
+    'fixedban2',
+    'fixedban',
+    'gpt_unit_/21727820151,22953604694/Gametech_HM/video-ad2_0',
+    'container-6f4f5c3f5bfa5f5651799c658cb3556b44923',
+    'div-gpt-ad-1714577932847-0',
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0__container__',
+    'gpt_unit_/21727820151,22953604694/Gametech_HM/Interstitial-gameland_0',
+    'id-custom_banner',
+    'google_ads_iframe_/22654869840/apl_1__container__',
+    'google_ads_iframe_/22893379435/apl_0__container__',
+    'dontfoid',
+    'gpt_unit_/7047,22643491855/apl/anchor/anchortop_0'
+]);
+
+// Additional code to block elements by class name
+function blockElementsByClass(className) {
+    var elements = document.getElementsByClassName(className);
+
+    // Remove elements from the DOM
+    while (elements.length > 0) {
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+
+// Block elements by class name
 // Call the function with the class name prefix you want to block
 blockElementsByClassPrefix('container-6f4f5c3f');
 blockElementsByClassPrefix('logo');
@@ -51,3 +87,4 @@ blockElementsByClassPrefix('relatedPosts');
 blockElementsByClassPrefix('row');
 blockElementsByClassPrefix('AboElSeed');
 blockElementsByClassPrefix('ads-aa');
+
