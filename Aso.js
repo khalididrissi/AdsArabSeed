@@ -26,14 +26,6 @@ function blockPopupContainer() {
     });
 }
 
-// Block elements with specific direction
-function blockElementsByDirection(direction) {
-    var elements = document.querySelectorAll(`[dir="${direction}"]`);
-    elements.forEach(function(element) {
-        element.removeAttribute('dir');
-    });
-}
-
 // Block common ad selectors
 blockElementsBySelector('iframe[src*=".doubleclick.net"]');
 blockElementsBySelector('iframe[src*=".googleadservices.com"]');
@@ -43,7 +35,7 @@ blockElementsBySelector('ins.adsbygoogle');
 blockElementsBySelector('div.ad-unit');
 blockElementsBySelector('div.ad-container');
 blockElementsBySelector('div.ad-banner');
-blockElementsBySelector('div.interstitial-ad');
+//blockElementsBySelector('div.interstitial-ad');
 blockElementsBySelector('div.banner-ad');
 blockElementsBySelector('div[id*="ad"]');
 blockElementsBySelector('div[class*="ad"]');
@@ -53,11 +45,6 @@ blockElementsBySelector('div[class*="banner"]');
 // Block Google Topics iframe
 blockElementsBySelector('iframe[name="goog_topics_frame"]');
 
-// Block right-to-left direction
-blockElementsByDirection('rtl');
-
-// Block specific script
-blockElementsBySelector('script[src="https://s0.2mdn.net/instream/video/client.js"]');
 
 // Block the popup container
 blockPopupContainer();
@@ -96,8 +83,13 @@ blockElementsByClass('relatedPosts');
 blockElementsByClass('row');
 blockElementsByClass('AboElSeed');
 blockElementsByClass('ads-aa');
+blockElementsByClass('pl-6f4f5c3f5bfa5f5651799c658cb3556b__wrap');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b40743');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b6839');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b49835');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b13062');
 blockElementsByClass('GoogleCreativeContainerClass');
-
+blockElementsByClass('pl-6f4f5c3f5bfa5f5651799c658cb3556b__wrap');
 //End Page 1
 blockElementsByClass('MainMenuOverlay');
 blockElementsByClass('mys-wrapper');
@@ -110,7 +102,13 @@ blockElementsByClass('ima-sdk-frame');
 blockElementsByClass('HeaderLogo');
 blockElementsByClass('downloadBTn');
 blockElementsByClass('div-over');
-
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b32535');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b62840');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b9969');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b8124');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b12185');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b41932');
+blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b71401');
 
 // Remove elements by ID
 var elementsToRemoveById = [
@@ -133,7 +131,8 @@ var elementsToRemoveById = [
     'gpt_unit_/7047,22643491855/apl/anchor/anchortop_0',
     'banner-container',
     'goog_2013926817',
-    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__'
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__',
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/tgv1_0__container__'
 ];
 
 elementsToRemoveById.forEach(function(elementId) {
