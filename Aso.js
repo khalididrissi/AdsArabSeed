@@ -26,6 +26,14 @@ function blockPopupContainer() {
     });
 }
 
+// Block elements with specific direction
+function blockElementsByDirection(direction) {
+    var elements = document.querySelectorAll(`[dir="${direction}"]`);
+    elements.forEach(function(element) {
+        element.removeAttribute('dir');
+    });
+}
+
 // Block common ad selectors
 blockElementsBySelector('iframe[src*=".doubleclick.net"]');
 blockElementsBySelector('iframe[src*=".googleadservices.com"]');
@@ -44,8 +52,12 @@ blockElementsBySelector('div[class*="banner"]');
 
 // Block Google Topics iframe
 blockElementsBySelector('iframe[name="goog_topics_frame"]');
-blockElementsBySelector('div[id*="ad_position_box"]')
 
+// Block right-to-left direction
+blockElementsByDirection('rtl');
+
+// Block specific script
+blockElementsBySelector('script[src="https://s0.2mdn.net/instream/video/client.js"]');
 
 // Block the popup container
 blockPopupContainer();
@@ -132,8 +144,7 @@ var elementsToRemoveById = [
     'gpt_unit_/7047,22643491855/apl/anchor/anchortop_0',
     'banner-container',
     'goog_2013926817',
-    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__',
-    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/tgv1_0__container__'
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__'
 ];
 
 elementsToRemoveById.forEach(function(elementId) {
