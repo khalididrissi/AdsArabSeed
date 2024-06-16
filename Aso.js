@@ -42,6 +42,10 @@ blockElementsBySelector('div[class*="ad"]');
 blockElementsBySelector('div[id*="banner"]');
 blockElementsBySelector('div[class*="banner"]');
 
+// Block Google Topics iframe
+blockElementsBySelector('iframe[name="goog_topics_frame"]');
+
+
 // Block the popup container
 blockPopupContainer();
 
