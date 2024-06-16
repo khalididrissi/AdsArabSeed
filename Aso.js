@@ -131,7 +131,8 @@ var elementsToRemoveById = [
     'gpt_unit_/7047,22643491855/apl/anchor/anchortop_0',
     'banner-container',
     'goog_2013926817',
-    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__'
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__',
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/tgv1_0__container__'
 ];
 
 elementsToRemoveById.forEach(function(elementId) {
