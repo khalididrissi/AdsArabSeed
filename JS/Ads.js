@@ -18,13 +18,6 @@ function blockElementsBySelector(selector) {
     });
 }
 
-// Block the popup container
-function blockPopupContainer() {
-    var popupContainers = document.querySelectorAll('iframe[id^=""][style*="position: fixed;"]');
-    popupContainers.forEach(function(container) {
-        container.parentNode.removeChild(container);
-    });
-}
 
 // Block common ad selectors
 blockElementsBySelector('iframe[src*=".doubleclick.net"]');

@@ -18,13 +18,6 @@ function blockElementsBySelector(selector) {
     });
 }
 
-// Block the popup container
-function blockPopupContainer() {
-    var popupContainers = document.querySelectorAll('iframe[id^=""][style*="position: fixed;"]');
-    popupContainers.forEach(function(container) {
-        container.parentNode.removeChild(container);
-    });
-}
 
 // Block common ad selectors
 blockElementsBySelector('iframe[src*=".doubleclick.net"]');
@@ -34,7 +27,6 @@ blockElementsBySelector('div[id*="div-gpt-ad"]');
 blockElementsBySelector('ins.adsbygoogle');
 blockElementsBySelector('gpt_unit');
 blockElementsBySelector('div.ad-unit');
-blockElementsBySelector('div.ad-container');
 blockElementsBySelector('div.ad-banner');
 blockElementsBySelector('div.interstitial-ad');
 blockElementsBySelector('ins[id^="gpt_unit"]');
@@ -48,8 +40,6 @@ blockElementsBySelector('div[class*="banner"]');
 blockElementsBySelector('iframe[name="goog_topics_frame"]');
 
 
-// Block the popup container
-blockPopupContainer();
 
 // 3isk Start
 blockElementsByClass('navbar-brand ms-0');
