@@ -20,7 +20,7 @@ function blockElementsBySelector(selector) {
 
 // Block the popup container
 function blockPopupContainer() {
-    var popupContainers = document.querySelectorAll('iframe[class*="container-6f4f5c3f5bfa5f5651799c658cb3556b"][style*="position: fixed;"]');
+    var popupContainers = document.querySelectorAll('iframe[id^="container-6f4"][style*="position: fixed;"]');
     popupContainers.forEach(function(container) {
         container.parentNode.removeChild(container);
     });
@@ -32,17 +32,20 @@ blockElementsBySelector('iframe[src*=".googleadservices.com"]');
 blockElementsBySelector('div[id*="google_ads_iframe"]');
 blockElementsBySelector('div[id*="div-gpt-ad"]');
 blockElementsBySelector('ins.adsbygoogle');
+blockElementsBySelector('gpt_unit');
 blockElementsBySelector('div.ad-unit');
 blockElementsBySelector('div.ad-container');
 blockElementsBySelector('div.ad-banner');
 blockElementsBySelector('div.interstitial-ad');
+blockElementsBySelector('ins[id^="gpt_unit"]');
 blockElementsBySelector('div.banner-ad');
-
-// Block additional ad selectors (add more as needed)
 blockElementsBySelector('div[id*="ad"]');
 blockElementsBySelector('div[class*="ad"]');
 blockElementsBySelector('div[id*="banner"]');
 blockElementsBySelector('div[class*="banner"]');
+
+// Block Google Topics iframe
+blockElementsBySelector('iframe[name="goog_topics_frame"]');
 
 
 // Block the popup container
@@ -108,7 +111,6 @@ blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b8124');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b12185');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b41932');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b71401');
-blockElementsByClass('infoPosterTwo');
 
 // Remove elements by ID
 var elementsToRemoveById = [
@@ -131,7 +133,8 @@ var elementsToRemoveById = [
     'gpt_unit_/7047,22643491855/apl/anchor/anchortop_0',
     'banner-container',
     'goog_2013926817',
-    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__'
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/video-ad2_0__container__',
+    'google_ads_iframe_/21727820151,22953604694/Gametech_HM/tgv1_0__container__'
 ];
 
 elementsToRemoveById.forEach(function(elementId) {
