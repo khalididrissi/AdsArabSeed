@@ -34,7 +34,6 @@ blockElementsBySelector('div[id*="div-gpt-ad"]');
 blockElementsBySelector('ins.adsbygoogle');
 blockElementsBySelector('gpt_unit');
 blockElementsBySelector('div.ad-unit');
-blockElementsBySelector('div.ad-container');
 blockElementsBySelector('div.ad-banner');
 blockElementsBySelector('div.interstitial-ad');
 blockElementsBySelector('ins[id^="gpt_unit"]');
