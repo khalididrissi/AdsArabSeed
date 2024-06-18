@@ -20,7 +20,7 @@ function blockElementsBySelector(selector) {
 
 // Block the popup container
 function blockPopupContainer() {
-    var popupContainers = document.querySelectorAll('iframe[id^="container-6f4"][style*="position: fixed;"]');
+    var popupContainers = document.querySelectorAll('iframe[id^=""][style*="position: fixed;"]');
     popupContainers.forEach(function(container) {
         container.parentNode.removeChild(container);
     });
