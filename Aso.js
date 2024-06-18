@@ -32,6 +32,8 @@ blockElementsBySelector('iframe[src*=".googleadservices.com"]');
 blockElementsBySelector('div[id*="google_ads_iframe"]');
 blockElementsBySelector('div[id*="div-gpt-ad"]');
 blockElementsBySelector('ins.adsbygoogle');
+blockElementsBySelector('gpt_unit');
+blockElementsBySelector('ins.gpt_unit');
 blockElementsBySelector('div.ad-unit');
 blockElementsBySelector('div.ad-container');
 blockElementsBySelector('div.ad-banner');
