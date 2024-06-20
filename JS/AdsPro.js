@@ -41,17 +41,6 @@ blockElementsBySelector('iframe[name="goog_topics_frame"]');
 
 
 
-// 3isk Start
-blockElementsByClass('navbar-brand ms-0');
-blockElementsByClass('alert alert-danger');
-blockElementsByClass('card my-4');
-
-blockElementsByClass('card');
-blockElementsByClass('py-1 bg-dark');
-// 3isk End
-
-//ArabSeed Start
-
 
 // Remove elements by ID
 var elementsToRemoveById = [
