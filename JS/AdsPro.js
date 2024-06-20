@@ -47,6 +47,9 @@ blockElementsByClass('alert alert-danger');
 blockElementsByClass('card my-4');
 
 blockElementsByClass('py-1 bg-dark');
+blockElementsByClass('btn btn-outline-secondary btn-sm dropdown-toggle');
+blockElementsByClass('btn btn-outline-secondary btn-sm');
+blockElementsByClass('card-text');
 // 3isk End
 
 //ArabSeed Start
