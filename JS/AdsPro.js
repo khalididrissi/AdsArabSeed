@@ -36,6 +36,8 @@ blockElementsBySelector('div[class*="ad"]');
 blockElementsBySelector('div[id*="banner"]');
 blockElementsBySelector('div[class*="banner"]');
 blockElementsBySelector('div[class*="card-header"');
+blockElementsBySelector('div[class*="card-body"');
+blockElementsBySelector('div[class*="card my-4"');
 
 // Block Google Topics iframe
 blockElementsBySelector('iframe[name="goog_topics_frame"]');
