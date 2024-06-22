@@ -47,8 +47,6 @@ blockElementsByClass('alert alert-danger');
 blockElementsByClass('card my-4');
 
 blockElementsByClass('py-1 bg-dark');
-blockElementsByClass('card-footer text-muted fs-6 px-1');
-blockElementsByClass('card');
 
 // 3isk End
 
