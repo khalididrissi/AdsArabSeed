@@ -102,7 +102,6 @@ blockElementsByClass('videoAdUi');
 blockElementsByClass('sarhne--banr');
 blockElementsByClass('ima-sdk-frame');
 blockElementsByClass('HeaderLogo');
-blockElementsByClass('downloadBTn');
 blockElementsByClass('div-over');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b32535');
 blockElementsByClass('container-6f4f5c3f5bfa5f5651799c658cb3556b62840');
